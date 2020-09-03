@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.NewHome">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#202020">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearbotones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+            <Button
+                android:id="@+id/register_new_home"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+
+
+                android:color="#ec1c53"
+                android:fontFamily="monospace"
+                android:text="ADD"
+
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+
+            android:layout_height="0dp"
+
+
+            android:layout_marginTop="16dp"
+
+            android:fontFamily="monospace"
+            android:lineSpacingExtra="14sp"
+            android:text="Enter a new home"
+            android:textAlignment="center"
+            android:textColor="#EC1C53"
+
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="70dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/tipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Type"
+                    android:inputType="text"
+                    android:maxLength="25"
+                    android:shadowColor="#FDFDFE"
+                    android:text="Casa"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/reg_nickname"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_name" />
+
+                <EditText
+                    android:id="@+id/oferta"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Ofert"
+                    android:maxLength="15"
+                    android:shadowColor="#FDFDFE"
+                    android:text="Venta"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/reg_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_email" />
+
+                <EditText
+                    android:id="@+id/estado"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Nickname"
+                    android:inputType="text"
+                    android:shadowColor="#FDFDFE"
+                    android:text="No Nuevo"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/reg_address"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_surname" />
+
+                <EditText
+                    android:id="@+id/ciudad"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:shadowColor="#FDFDFE"
+                    android:text="Potosi"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/reg_cellphone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_nickname" />
+
+                <EditText
+                    android:id="@+id/zona"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="Ciudad Satelite"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+                <EditText
+                    android:id="@+id/direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Password"
+                    android:maxLength="15"
+                    android:shadowColor="#FDFDFE"
+                    android:text="6 De Agosto"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/reg_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_email" />
+
+                <EditText
+                    android:id="@+id/precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Nickname"
+                    android:inputType="text"
+                    android:shadowColor="#FDFDFE"
+                    android:text="80000"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/reg_address"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_surname" />
+
+                <EditText
+                    android:id="@+id/desc_casa"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:shadowColor="#FDFDFE"
+                    android:text="Bonita casa a la venta baratito ya nomàs sale"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/reg_cellphone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_nickname111" />
+
+                <EditText
+                    android:id="@+id/supTerreno"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="120"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+                <EditText
+                    android:id="@+id/servicios"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="Agua, luz y gas"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+                <EditText
+                    android:id="@+id/dormitorios"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="5"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+                <EditText
+                    android:id="@+id/banos"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="2"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+                <EditText
+                    android:id="@+id/pisos"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="2"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+                <EditText
+                    android:id="@+id/piscina"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="no"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+                <EditText
+                    android:id="@+id/garaje"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="1"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+                <EditText
+                    android:id="@+id/amoblado"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="no"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+                <EditText
+                    android:id="@+id/ano"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="Insert Your Acoount"
+                    android:hint="Cell phone number"
+                    android:shadowColor="#FDFDFE"
+                    android:text="1994"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FDFDFE"
+                    android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toTopOf="@+id/register_new"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/reg_address" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
